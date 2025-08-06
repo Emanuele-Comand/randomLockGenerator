@@ -1,6 +1,4 @@
-particlesJS.load("particles-js", "/particles.json", () => {
-  console.log("particles caricato");
-});
+particlesJS.load("particles-js", "/particles.json", () => {});
 
 import initPassword from "./password.js";
 import initTooltip from "./tooltip.js";
