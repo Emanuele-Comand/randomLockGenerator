@@ -30,4 +30,22 @@ export default function initPassword(length, options = {}) {
   const chars = buildCharSet(options);
   const pwd = createPassword(length, chars);
   document.getElementById("password-text").textContent = pwd;
+  const copyIcon = document.getElementById("copy-icon");
+  copyIcon.replaceWith(copyIcon.cloneNode(true));
+  const freshCopyIcon = document.getElementById("copy-icon");
+
+  freshCopyIcon.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(pwd);
+    } catch {
+      const textarea = document.createElement("textarea");
+      textarea.value = pwd;
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.body.removeChild(textarea);
+    }
+    alert("Password copiata negli appunti!");
+  });
 }
