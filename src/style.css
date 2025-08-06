@@ -114,6 +114,10 @@ h2 {
   opacity: 30%;  
 }
 
+#customization-container p {
+  color: #919191;
+}
+
 .chars-range-wrapper {
   padding-top: 20px;
 }
@@ -130,3 +134,4 @@ h2 {
   width: 30px;
   height: 30px;
 }
+
