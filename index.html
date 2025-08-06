@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Random Lock Password Generator</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <header class="header nata-sans">
+          <h1 class="nata-sans">Random Lock password generator</h1>
+          <p class="subtitle nata-sans">
+            Generate free passwords without limits!
+          </p>
+        </header>
+        <main id="password">
+          <div class="card-wrapper">
+            <div class="card nata-sans">
+              <p id="password-text"></p>
+              <div class="icon-group">
+                <div class="icon-wrapper" data-tooltip="Copy">
+                  <i
+                    id="copy-icon"
+                    class="fa-solid fa-2x fa-copy card-icons"
+                  ></i>
+                </div>
+                <div class="icon-wrapper" data-tooltip="Regenerate">
+                  <i
+                    id="regen-icon"
+                    class="fa-solid fa-2x fa-arrows-rotate card-icons"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="customization-container">
+            <h2 class="nata-sans">Customize your password</h2>
+            <hr />
+            <div class="chars-range-wrapper">
+              <label class="nata-sans" name="chars-range" id="chars-range-label"
+                >Password lenghth</label
+              >
+              <input
+                name="chars-range"
+                id="chars-range"
+                type="range"
+                min="4"
+                max="32"
+                value="16"
+              />
+              <span id="chars-range-value" class="nata-sans">16</span>
+            </div>
+            <div class="checkboxes-wrapper nata-sans">
+              <label name="uppercase_chars" id="uppercase_chars"
+                >Uppercase chars</label
+              >
+              <input
+                type="checkbox"
+                name="uppercase_chars"
+                id="uppercase_chars"
+                class="checkboxes"
+                checked
+              />
+              <label name="lowercase_chars" id="lowercase_chars"
+                >Lowercase chars</label
+              >
+              <input
+                type="checkbox"
+                name="lowercase_chars"
+                id="lowercase_chars"
+                class="checkboxes"
+                checked
+              />
+              <label name="numbers" id="numbers">Numebrs</label>
+              <input
+                type="checkbox"
+                name="numbers"
+                id="numbers"
+                class="checkboxes"
+                checked
+              />
+              <label name="symbols" id="symbols">Symbols</label>
+              <input
+                type="checkbox"
+                name="symbols"
+                id="symbols"
+                class="checkboxes"
+                checked
+              />
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

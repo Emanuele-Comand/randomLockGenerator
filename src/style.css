@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: auto;
+}
+
+.header {
+  padding-top: 50px;
+}
+
+.nata-sans {
+  font-family: "Nata Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #919191;
+    font-weight: 100;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #bcbcbc;
+  width: 768px;
+  border-radius: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+.card-icons {
+  color: #404040;
+  cursor: pointer;
+}
+
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-group {
+  display: flex;
+  gap: 20px
+}
+
+.icon {
+ width: 20px;
+ height: 20px; 
+}
+
+#password-text {
+  font-size: 24px;
+}
+
+.tooltip {
+  position: absolute;       
+  bottom: calc(100% + 6px); 
+  background-color: #404040;
+  color: white;
+  padding: 4px;
+  left: 50%;                
+  transform: translateX(-50%); 
+  white-space: nowrap;      
+  z-index: 10;  
+  border-radius: 4px;
+  visibility: hidden;
+}
+
+.icon-wrapper:hover .tooltip {
+  visibility: visible;
+}
+
+#customization-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #bcbcbc;
+  width: 768px;
+  border-radius: 10px;
+  margin: 20px auto
+}
+
+#customization-container hr {
+  width: 90%;               
+  border: none;              
+  border-top: 2px solid #bcbcbc;
+  opacity: 30%;  
+}
+
+.chars-range-wrapper {
+  padding-top: 20px;
+}
+
+.checkboxes-wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 10px
+}
+
+.checkboxes {
+  width: 30px;
+  height: 30px;
+}
